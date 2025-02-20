@@ -19,10 +19,17 @@
         }
 
         .profile img {
-            width: 150px;
-            height: 150px;
+            width: 160px; /* Slightly bigger for a better presence */
+            height: 160px;
             border-radius: 50%;
-            border: 3px solid #ffffff;
+            border: 4px solid #ffffff;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .profile img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.4);
         }
 
         .profile h1 {
