@@ -54,14 +54,35 @@
             max-width: 400px;
             text-decoration: none;
             color: #ffffff;
-            background-color: #6a0dad;
+            /* Create a gradient that is fully opaque in the center and fades to transparent at the edges */
+             background: linear-gradient(45deg, 
+                rgba(106,13,173,0) 0%, 
+                rgba(106,13,173,1) 30%, 
+                rgba(106,13,173,1) 70%, 
+                rgba(106,13,173,0) 100%);
             border-radius: 25px;
             font-size: 18px;
-            transition: background-color 0.3s;
+            transition: background 0.3s; transform 0.3s, box-shadow 0.3s;
+      /* 3D effect: initial bottom shadow */
+      box-shadow: 0 4px 0px rgba(0,0,0,0.7);
+      position: relative;
         }
 
         .links a:hover {
-            background-color: #d8b4e2;
+            background: linear-gradient(45deg, 
+                rgba(162,89,255,0) 0%, 
+                rgba(162,89,255,1) 30%, 
+                rgba(162,89,255,1) 70%, 
+                rgba(162,89,255,0) 100%);
+      /* Lift the button upward on hover */
+      transform: translateY(-3px);
+      box-shadow: 0 8px 0px rgba(0,0,0,0.7);
+        }
+
+        .links a:active {
+      /* Simulate a press */
+      transform: translateY(1px);
+      box-shadow: 0 2px 0px rgba(0,0,0,0.7);
         }
         
         .latest-releases {
