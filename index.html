@@ -41,7 +41,52 @@
             font-size: 16px;
             color: #aaaaaa;
         }
+        .featured-songs {
+            margin-top: 30px;
+            text-align: center;
+        }
+        
+        .featured-songs h2 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+        
+        .song-links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .song {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 18px;
+        }
+        
+        .song a {
+            text-decoration: none;
+            color: #1db954;
+            font-weight: bold;
+        }
+        
+        .song button {
+            background-color: #1db954;
+            color: #ffffff;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        .song button:hover {
+            background-color: #1ed760;
+        }
 
+        
         .links {
             margin-top: 30px;
         }
@@ -151,6 +196,28 @@
         <h1>Sentimiento</h1>
         <p>¡Mantente Conectado! Enlaces Oficiales</p>
     </div>
+    <!-- Featured Songs Section -->
+<div class="featured-songs">
+    <h2>🎵 Featured Songs</h2>
+    <div class="song-links">
+        <div class="song">
+            <a href="https://open.spotify.com/track/7sh3lPofw0PdZXkTN9XiZC?si=a7e36d3635e64236" target="_blank">LA MEJOR VISTA</a>
+            <button onclick="window.open('https://open.spotify.com/track/7sh3lPofw0PdZXkTN9XiZC?si=a7e36d3635e64236')">▶</button>
+        </div>
+        <div class="song">
+            <a href="https://open.spotify.com/track/7pAGRCgYTNZzqOlb9fszD1?si=61bc81d56fd34295" target="_blank">A ESCONDIDAS</a>
+            <button onclick="window.open('https://open.spotify.com/track/7pAGRCgYTNZzqOlb9fszD1?si=61bc81d56fd34295')">▶</button>
+        </div>
+        <div class="song">
+            <a href="https://open.spotify.com/track/1djMWx1Neuoo2YPdJOO4pa?si=48ec02fa54684dfa" target="_blank">DAME UN BESITO</a>
+            <button onclick="window.open('https://open.spotify.com/track/1djMWx1Neuoo2YPdJOO4pa?si=48ec02fa54684dfa')">▶</button>
+        </div>
+        <div class="song">
+            <a href="https://youtu.be/QrkZe0M92rs" target="_blank">MUCHO CALOR</a>
+            <button onclick="window.open('https://youtu.be/QrkZe0M92rs')">▶</button>
+        </div>
+    </div>
+</div>
 
     <div class="links">
         <a href="https://open.spotify.com/artist/7HBWZRtvj0QxCFabtLmjrt">🎶 Spotify</a>
